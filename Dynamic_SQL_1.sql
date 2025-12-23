@@ -124,7 +124,7 @@ DECLARE
    TYPE t_fir_las IS TABLE OF VARCHAR2(200);
    v_emp t_fir_las := t_fir_las();
 BEGIN
-   EXECUTE IMMEDIATE 'Select first_name || '' '' || last_name from EMPLOYEE' 
+   EXECUTE IMMEDIATE q'[Select first_name || ' ' || last_name from EMPLOYEE]' 
    BULK COLLECT INTO v_emp; -- Collection (required)
 
    FOR I IN v_emp.FIRST .. v_emp.LAST LOOP
@@ -137,13 +137,13 @@ DECLARE
    TYPE t_fir_las IS TABLE OF VARCHAR2(200);
    v_emp t_fir_las := t_fir_las();
 BEGIN
-   EXECUTE IMMEDIATE 'UPDATE Employee SET first_name = ''Sayan'' WHERE Department = ''Finance'' RETURNING Last_name INTO :a'
+   EXECUTE IMMEDIATE q'[UPDATE Employee SET first_name = 'Sayan' WHERE Department = 'Finance' RETURNING Last_name INTO :a]'
    RETURNING BULK COLLECT INTO v_emp; -- Collection (required)
    
    FOR I IN v_emp.FIRST .. v_emp.LAST LOOP
       DBMS_OUTPUT.PUT_LINE(v_emp(I));
    END LOOP;
 END;
-
+/
 ----------------------------------------------------------------------------------------------------------
 
