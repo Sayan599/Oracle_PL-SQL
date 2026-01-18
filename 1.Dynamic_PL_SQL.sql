@@ -11,12 +11,9 @@
 
 ----------------------------------------------------------------------------
 
-   SET SERVEROUTPUT ON;
+SET SERVEROUTPUT ON;
 begin
-   for emp in (
-      select *
-        from employee
-   ) loop
+   for emp in (select * from employee) loop
       dbms_output.put_line(emp.first_name
                            || ' ' || emp.last_name);
    end loop;

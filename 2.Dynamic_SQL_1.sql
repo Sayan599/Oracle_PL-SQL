@@ -147,3 +147,16 @@ END;
 /
 ----------------------------------------------------------------------------------------------------------
 
+SET SERVEROUTPUT ON;
+DECLARE
+   v_dyn varchar2(1000) := 'SELECT * from employee';
+   TYPE t_emp IS TABLE OF EMPLOYEE%ROWTYPE;
+   v_emp t_emp := t_emp();
+BEGIN
+   execute immediate v_dyn
+   BULK COLLECT into v_emp;
+
+   for i in 1 .. 5 LOOP
+      DBMS_OUTPUT.PUT_LINE(v_emp(i).first_name);
+   end LOOP;
+END;
