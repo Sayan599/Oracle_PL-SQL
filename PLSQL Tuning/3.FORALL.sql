@@ -16,4 +16,3 @@ Select * FROM employee; -- 100rows
 Select * from employee_bkp; -- 0 rows
 
 -- USING FOR loop
--- Added line
