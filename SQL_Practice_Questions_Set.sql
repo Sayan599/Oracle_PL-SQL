@@ -9,10 +9,23 @@ GROUP BY name, floor
 SELECT c.name,  
        (SELECT count(1) FROM ENTRIES WHERE name = c.name) total_visits,
        c.most_visited_floor,
-       (SELECT LISTAGG(DISTINCT resources, ',') WITHIN GROUP (ORDER BY resources) FROM ENTRIES WHERE name = c.name) resources_used
+       (SELECT LISTAGG(DISTINCT resources, ',') WITHIN GROUP (ORDER BY resources) 
+        FROM   ENTRIES WHERE name = c.name) resources_used
 FROM   cte c 
 WHERE  times = (SELECT max(times) FROM cte);
 /
+
+1. LISTAGG()
+2. column
+3. DELIMITER
+4. WITHIN GROUP
+5. ORDER BY 
+6. column
+
+LISTAGG(DISTINCT resources, ',') 
+WITHIN GROUP 
+(ORDER BY resources) 
+
 
 WITH floor_stats AS (
     SELECT name,
