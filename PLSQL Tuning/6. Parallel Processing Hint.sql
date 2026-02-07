@@ -48,6 +48,18 @@ SELECT value
 -- Recommended to set degree to cpu_count/2 or cpu_count
 ------------------------------
 
-SELECT /*+ PARALLEL(e, 4) */ e.employee_id, e.first_name, e.last_name
-  FROM employees e
- WHERE e.department_id = 10;
+EXPLAIN PLAN FOR
+SELECT *
+  FROM employee e
+ WHERE e.department = 'Sales';
+
+EXPLAIN PLAN FOR
+SELECT /*+ PARALLEL(e, 4) */ *
+  FROM employee e
+ WHERE e.department = 'Sales';
+
+SPOOL 'plan_output.txt';
+SELECT /*+ PARALLEL(e, 4) */ *
+  FROM employee e
+ WHERE e.department = 'Sales';
+SPOOL OFF;
