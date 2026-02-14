@@ -1,0 +1,4 @@
+empno,ename,hiredate,deptno
+7782,Clark,09-Jun-81,10
+7839,King,17-Jun-81,10
+7934,Mill,23-Jan-82,10

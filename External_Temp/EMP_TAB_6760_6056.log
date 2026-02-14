@@ -1,0 +1,126 @@
+
+
+ LOG file opened at 02/13/26 11:38:07
+
+Total Number of Files=1
+
+Data File: emp_dept10.txt
+
+Log File: EMP_TAB_6760_6056.log
+
+
+
+ LOG file opened at 02/13/26 11:38:07
+
+Bad File: EMP_TAB_6760_6056.bad
+
+Field Definitions for table EMP_TAB
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EMPNO                           CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+    ENAME                           CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+    HIREDATE                        CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+    DEPTNO                          CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+
+Date Cache Statistics for table EMP_TAB
+  Max Size:      1000
+  Entries :         3
+  Hits    :         0
+  Misses  :         0
+
+
+
+ LOG file opened at 02/13/26 11:38:07
+
+Total Number of Files=1
+
+Data File: emp_dept10.txt
+
+Log File: EMP_TAB_6760_6056.log
+
+
+
+ LOG file opened at 02/13/26 11:38:07
+
+Bad File: EMP_TAB_6760_6056.bad
+
+Field Definitions for table EMP_TAB
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EMPNO                           CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+    ENAME                           CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+    HIREDATE                        CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+    DEPTNO                          CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+
+Date Cache Statistics for table EMP_TAB
+  Max Size:      1000
+  Entries :         3
+  Hits    :         0
+  Misses  :         0
+
+
+
+ LOG file opened at 02/13/26 11:38:07
+
+Total Number of Files=1
+
+Data File: emp_dept10.txt
+
+Log File: EMP_TAB_6760_6056.log
+
+
+
+ LOG file opened at 02/13/26 11:38:07
+
+Bad File: EMP_TAB_6760_6056.bad
+
+Field Definitions for table EMP_TAB
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    EMPNO                           CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+    ENAME                           CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+    HIREDATE                        CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+    DEPTNO                          CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+
+Date Cache Statistics for table EMP_TAB
+  Max Size:      1000
+  Entries :         3
+  Hits    :         0
+  Misses  :         0
+

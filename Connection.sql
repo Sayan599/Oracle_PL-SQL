@@ -1,0 +1,1 @@
+Path => D:\Downloads\homes\OraDB21Home3\network\admin
